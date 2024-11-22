@@ -1,3 +1,9 @@
 USE VARIABLES
 
 implement tailwind
+
+
+All text
+Kanit font
+white
+heading: bold
