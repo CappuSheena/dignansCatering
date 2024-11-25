@@ -104,3 +104,11 @@ footer{
     font-size: 3rem;
     padding: 0.5em 0em 0.5em 0em;
 }
+
+@media screen and (min-width: 767px ) {
+    
+}
+
+@media screen and (min-width: 991px ) {
+    
+}
