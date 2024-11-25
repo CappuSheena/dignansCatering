@@ -59,6 +59,9 @@
 .pointer{
     cursor: pointer;
 }
+.page-active{
+    border-bottom: solid 2px var(--secondary-colour);
+}
 /* END OF GLOBAL CLASSES */
 
 
@@ -70,8 +73,109 @@ body{
 }
 
 
+/* NAV LINKS - HEADER */
+
 header{
-    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    height: 11vh;
+    width: 100vw;
+    padding-top: 10px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navbar{
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 11vh;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 10px;
+    transform: translateX(-100%);
+    background-color: var(--secondary-colour);
+}
+
+.nav-menu{
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: var(--secondary-colour);
+    font-size: 18px;
+}
+
+.nav-item-open{
+    color: white;
+}
+
+
+
+.spacing-bar{
+    width: 5px;
+    height: 25px;
+    background-color: var(--secondary-colour);
+    transition: transform 0.3s ease;
+
+}
+
+.spacing-bar-open{
+    transform: rotate(90deg);
+    background-color: white;
+}
+
+.nav-item:hover{
+    border-bottom: black solid 3px;
+    transition: 400ms ease-in;
+}
+
+/* Setting up the Hamburger menu */
+.hamburger{
+    display: block;
+    z-index: 200;
+    margin: 0 20px;
+}
+
+.bar{
+    height: 3px;
+    width: 27px;
+    margin: 5px 0;
+    background: black;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Setting up the classes that JS will trigger in order to open the hamburger menu */
+
+.navbar-open{
+    transform: translateX(0) !important;
+}
+
+/* nth child (x) selects a certain child with the class 'bar', in this case the first */
+/* Adds a little animation to the hamburger to turn it into a cross */
+.hamburger-open .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+/* hides the middle bar to form the X with 2 bars */
+.hamburger-open .bar:nth-child(2){
+    opacity: 0;
+}
+
+/* Adds a little animation to the hamburger to turn it into a cross */
+.hamburger-open .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 
@@ -106,9 +210,43 @@ footer{
 }
 
 @media screen and (min-width: 767px ) {
+    .hamburger{
+        display: none;
+    }
+
+    .navbar{
+        width: 60vw;
+        transform: unset;
+        position: relative;
+        background-color: unset;
+        top: 0;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        padding-right: 15px;
+    }
     
 }
 
 @media screen and (min-width: 991px ) {
-    
+    .hamburger{
+        display: none;
+    }
+
+    .navbar{
+        width: 60vw;
+        transform: unset;
+        position: relative;
+        background-color: unset;
+        top: 0;
+    }
+
+    .nav-menu{
+        display: flex;
+        padding-right: 15px;
+        flex-direction: row;
+    }
+
 }
