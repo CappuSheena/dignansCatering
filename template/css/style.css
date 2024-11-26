@@ -64,12 +64,23 @@
 }
 /* END OF GLOBAL CLASSES */
 
+.links{
+    text-decoration: none;
+}
+
+.white{
+    color: white;
+}
 
 body{
     height: 100vh;
     width: 100vw;
     font-family: "Kanit", sans-serif;
-    color: white;
+}
+
+.full-width{
+    width: 100vw;
+
 }
 
 
@@ -80,7 +91,6 @@ header{
     align-items: center;
     min-height: 60px;
     height: 11vh;
-    width: 100vw;
     padding-top: 10px;
 }
 
@@ -94,7 +104,6 @@ header{
     position: fixed;
     top: 11vh;
     left: 0;
-    width: 100%;
     padding: 10px 0 10px;
     transform: translateX(-100%);
     background-color: var(--secondary-colour);
@@ -178,6 +187,31 @@ header{
     transform: translateY(-8px) rotate(-45deg);
 }
 
+/* BODY */
+
+.main-hero{
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/media/main-hero.jpg);
+    display: flex;
+    align-items: end;
+}
+
+.main-hero > h1{
+    padding: 0 0 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
@@ -187,7 +221,6 @@ footer{
 
 .footer-heading{
     font-size: 18px;
-    color: white;
     border-bottom: solid white 2px;
     padding: 3px;
     margin-bottom: 5px;
@@ -208,6 +241,8 @@ footer{
     font-size: 3rem;
     padding: 0.5em 0em 0.5em 0em;
 }
+
+
 
 @media screen and (min-width: 767px ) {
     .hamburger{
