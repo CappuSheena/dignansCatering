@@ -214,6 +214,7 @@ header{
 
 
 
+
 footer{
     justify-content: space-between;
 
@@ -235,13 +236,16 @@ footer{
     padding: 10px;
 }
 
+.footer-contactus{
+    line-height: 25px;
+}
+
 .social-media-icons{
     height: 100%;
     justify-content: space-around;
     font-size: 3rem;
     padding: 0.5em 0em 0.5em 0em;
 }
-
 
 
 @media screen and (min-width: 767px ) {
