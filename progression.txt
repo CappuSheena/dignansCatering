@@ -7,3 +7,12 @@ All text
 Kanit font
 white
 heading: bold
+
+
+
+10/01/25
+Changed the spacing on the about us page
+cropped the image on the about us page
+
+box on right hand side needs to be a TABLE for opening times
+focus on about us page before moving onto other pages

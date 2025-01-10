@@ -331,14 +331,13 @@ header{
 
 .WAW-box{
     height: 400px;
+    justify-content: space-evenly;
 }
 
-.WAW-box > img{
-    
-}
 
 .WAWabout-box{
     width: 33%;
+    color: var(--secondary-colour);
 }
 
 
