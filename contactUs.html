@@ -6,6 +6,7 @@
     <title>Home | Dignans</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body class="white">
 
@@ -48,23 +49,56 @@
 
     <!-- PAGE DEPENDENT CONTENT -->
     
-    <div class="reach-out-box background-beige">
+    <div class="reach-out-box background-beige flex center-all flex-col">
         <h2 class="subhead-font">Reach out to us!</h2>
         <p>We would love to hear from you!<br><br>
         Please fill our form below and we will be in touch with you as soon as possible</p>
     </div>
-
-
-
-
-
     
 <!-- WOOM just means Whats On Our Menu -->
 <div class="woom-box background-gray flex flex-col center-all">
     <h2 class="subhead-font subhead-font-shadow">Whats On Our Menu?</h2>
     <a href="products.html" class="links"><button class="woom-btn pointer">Take Me There</button></a>
 </div>
-    
+
+
+<div class="contact-form-container background-beige flex center-all">
+
+    <div class="contact-form-mainbox background-gray flex center-all">
+        
+        <form action="" class="contact-form full-width flex flex-col" onsubmit="return validateForm()">
+
+            <div class="form-group flex center-all flex-col">
+                <label for="firstName"></label>
+                <input type="text" id="firstName" placeholder="Name: eg. Kamala Harris">
+                <span id="nameError" class="error"></span>
+            </div>
+
+            <div class="form-group flex center-all flex-col">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder=" Email: eg. kamalaharris@example.com">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="form-group flex center-all flex-col">
+                <label for="message"></label>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Enter your message here" maxlength="500"></textarea>
+                <span id="messageError" class="error"></span>
+            </div>
+
+            <div class="g-recaptcha" data-sitekey="6LfYN7YqAAAAAOMnGvhytS-l-sE_KagO14l-X9IU"></div>
+
+            <div class="form-group flex center-all">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+
+            
+
+        </form>
+
+    </div>
+
+</div>    
 
     
 
