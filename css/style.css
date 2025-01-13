@@ -53,7 +53,6 @@
 .head-font{
     font-family: var(--main-font);
     font-weight: 900;
-    text-shadow: 7px 7px 9px rgba(0,0,0,0.9);
 }
 
 .subhead-font{
@@ -232,6 +231,7 @@ header{
 
 .main-hero > h1{
     padding: 0 0 20px 20px;
+    text-shadow: 7px 7px 9px rgba(0,0,0,0.9);
 }
 
 .home-testimonials-box{
@@ -334,8 +334,9 @@ header{
 }
 
 .WAW-box{
-    height: 400px;
+    height: 450px;
     justify-content: space-evenly;
+    padding-bottom: 40px;
 }
 
 
@@ -362,6 +363,15 @@ th{
     height: 1.7em;
 }
 
+.aboutusparallax{
+    background-image: url("../media/aboutusparallax.jpeg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
 
 
 
