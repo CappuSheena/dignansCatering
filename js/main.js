@@ -73,13 +73,39 @@ function validateForm(){
     console.log("Validation Passed:", { username, email, message });
 
 
-    // saveDataLocally(username, email, message);
+    saveDataLocally(username, email, message);
 
     console.log("Redirecting...");
 
     window.location.href = "confirmation.html";
 
     return false;
+}
 
 
+
+function saveDataLocally(username, email, message){
+    //This saves the inputs into the browser
+    var formData = {
+        username: username,
+        email: email,
+        message: message,
+    };
+
+    //Adds to the browsers local storage, known as a JSON string
+    localStorage.setItem("formData", JSON.stringify(formData));
+ };
+
+
+
+ // Pull the data from browsers local storage
+let storedData = localStorage.getItem('formData');
+
+// Display the stored data
+if (storedData) {
+    var parsedData = JSON.parse(storedData);
+    document.getElementById('storedusername').textContent = parsedData.username;
+    document.getElementById('storedEmail').textContent = parsedData.email;
+    document.getElementById('storedMessage').textContent = parsedData.message;
+                                                     
 }

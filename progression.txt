@@ -11,5 +11,6 @@ Take CAPTCHA issue to Karen
 Invalid site keys showing
 
 
-Validation checks working on form (except name for some reason)
-however form wont redirect after submission 
+ALL PAGES COMPLETE
+
+apart from PRODUCTS
