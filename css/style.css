@@ -277,7 +277,7 @@ header{
 
 .woom-box{
     width: 100vw;
-    height: 350px;
+    height: 150px;
     gap: 30px;
 }
 
@@ -297,6 +297,7 @@ header{
 
 .woom-box-products{
     width: 100vw;
+    background-color: var(--secondary-colour);
     height: 200px;
     justify-content: space-around;
 }
@@ -371,8 +372,14 @@ th{
     background-repeat: no-repeat;
     background-size: cover;
 }
-    
 
+/* END OF ABOUT US */
+
+/* BEGIN CONTACT US */
+
+
+
+/* END OF CONTACT US */
 
 
 
