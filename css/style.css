@@ -407,6 +407,11 @@ th{
 
 .form-group{
     width: 100%;
+    gap: 10px;
+}
+
+.form-group > span{
+    color: rgb(214, 125, 125);
 }
 
 .form-group > input, #message, .submit-btn{
@@ -513,6 +518,25 @@ footer{
     /*  This specifically targets ONLY these cards which hold the display none class */
     .home-testimonials-box .testimonial-card.display-none {
         display: flex !important; /* Ensures the cards are shown */
+    }
+
+
+    /* CONTACT BOX */
+
+    .contact-form-container{
+        height: 700px;
+    }
+
+    .contact-form-mainbox{
+        height: 615px;
+    }
+
+    .form-group > input, .submit-btn{
+        height: 50px;
+    }
+
+    .form-group > #message{
+        height: 260px;
     }
 
     

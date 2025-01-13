@@ -24,3 +24,58 @@ navbar.addEventListener('click', () => {
     hamburger.classList.remove("hamburger-open");
 });
 
+// FORM VALIDATION
+
+function validateForm(){
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+
+    username = document.getElementById("username").value.trim();
+    email = document.getElementById("email").value.trim();
+    message = document.getElementById("message").value.trim();
+    
+    // Validates there is a name input
+    if(username === ""){
+        document.getElementById("nameError").textContent = "* Name is required";
+        return false;
+    }
+
+    // In this RegEx, the forward slash is the beginning, the ^ signifies the content within the slashes. Within the bracket it checks that there is lowercase a-z and uppercase A-Z. the plus checks for a space, the dollar sign signifies the end of checks/regExs, the forward slash represents the end.
+    
+    // var namePattern = /^[a-zA-Z]+[a-zA-Z]+$/
+    // if(!namePattern.test(username)){
+    //     document.getElementById("nameError").textContent = "* Name must contain only letters"
+    //     return false;
+    // };
+
+
+    // Validates the email
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRegex.test(email)){
+        document.getElementById("emailError").textContent = "* invalid Email"
+        return false;
+    }
+
+    if(email === ""){
+        document.getElementById("emailError").textContent = "* Please enter an Email"
+        return false;
+    }
+
+    // Validate message
+    if (message === "") {
+        document.getElementById("messageError").textContent = "* Message cannot be empty";
+        return false;
+    }
+
+
+    saveDataLocally(username, email, message);
+
+    console.log("Redirecting...");
+
+    window.location.href = "confirmation.html";
+
+    return false;
+
+
+}
