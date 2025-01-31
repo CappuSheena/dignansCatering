@@ -298,16 +298,17 @@ header{
 
 .info-box-home{
     color: var(--secondary-colour);
+    flex-direction: column;
 }
 
 .info-box-sect-home{
     text-align: center;
-    padding: 40px 100px ;
+    padding: 80px;
 }
 
 .info-box-home-border{
     width: 80%;
-    border-bottom: 2px var(--secondary-colour) solid;
+    border: 1px var(--secondary-colour) solid;
 }
 
 
@@ -602,6 +603,14 @@ footer{
         display: flex !important; /* Ensures the cards are shown */
     }
 
+    .info-box-home{
+        flex-direction: row;
+    }
+
+    .info-box-home-border{
+        height: 100px;
+        width: 1px;
+    }
 
     /* CONTACT BOX */
 
@@ -660,5 +669,6 @@ footer{
     .testimonial-card > p{
         font-size: 16px;
     }
+
 
 }
