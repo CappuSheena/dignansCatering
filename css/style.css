@@ -531,8 +531,13 @@ padding: 20px;
     color: var(--secondary-colour);
     padding: 30px 0px;
 }
+
 .separator-div{
     border: 1px solid var(--secondary-colour);
+}
+
+.menu-sect{
+    padding: 30px 0px;
 }
 
 .menu-end-info{
@@ -540,10 +545,8 @@ padding: 20px;
     padding: 30px;
 }
 
-.menu-sect > p:first-child{
-    margin-top: 100px;
-    background-color: red;
-
+.menu-sect p:nth-child(2){
+    padding: 30px 0px;
 }
 
 
