@@ -109,3 +109,10 @@ if (storedData) {
     document.getElementById('storedMessage').textContent = parsedData.message;
                                                      
 }
+
+// PRINTING FUNCTION
+
+
+function enhancedPrint(){
+    window.print()
+}

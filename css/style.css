@@ -170,7 +170,7 @@ header{
 .navbar{
     transition: all 0.3s ease-in-out;
     position: fixed;
-    top: 11vh;
+    top: 10vh;
     left: 0;
     padding: 10px 0 10px;
     transform: translateX(-100%);
@@ -526,7 +526,6 @@ padding: 20px;
 
 
 
-/* Rectangle 27 */
 
 
 
@@ -676,4 +675,24 @@ footer{
     }
 
 
+}
+
+@media print{
+    header,
+    footer,
+    .navbar,
+    .print-box,
+    .main-hero,
+    .home-testimonials-box{
+        display: none;
+    }
+
+    .woom-box > h2, p{
+        text-shadow: none;
+        color: black;
+    }
+
+    .main-hero{
+        justify-content: center;
+    }
 }
