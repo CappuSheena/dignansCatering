@@ -524,6 +524,23 @@ padding: 20px;
 
 /* END OF PRODUCTS  */
 
+/* INDIVIDUAL PRODUCT PAGES */
+
+.menu-page-body{
+    justify-content: space-evenly;
+    color: var(--secondary-colour);
+    padding: 30px 0px;
+}
+.separator-div{
+    border: 1px solid var(--secondary-colour);
+}
+
+.menu-end-info{
+    color: var(--secondary-colour);
+    padding: 30px;
+}
+
+
 
 
 
