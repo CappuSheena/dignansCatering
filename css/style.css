@@ -296,6 +296,21 @@ header{
     justify-content: space-around;
 }
 
+.info-box-home{
+    color: var(--secondary-colour);
+}
+
+.info-box-sect-home{
+    text-align: center;
+    padding: 40px 100px ;
+}
+
+.info-box-home-border{
+    width: 80%;
+    border-bottom: 2px var(--secondary-colour) solid;
+}
+
+
 .woom-box{
     width: 100vw;
     height: 150px;
