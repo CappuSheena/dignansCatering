@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /confirmation.html
+Sitemap: https://www.yoursite.com/sitemap.xml
